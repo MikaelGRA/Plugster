@@ -1,0 +1,38 @@
+﻿{
+   "version": "0.1.0-beta1",
+   "title": "Plugster",
+   "description": "Simple wrapper around the AppDomain/Assembly API to allow loading plugins into a sandbox.",
+   "authors": [ "MikaelGRA" ],
+   "packOptions": {
+      "owners": [ "MikaelGRA" ],
+      "tags": [ "AppDomain", "Plugins" ],
+      "projectUrl": "https://github.com/MikaelGRA/Plugster",
+      "licenseUrl": "https://github.com/MikaelGRA/Plugster/blob/master/LICENSE",
+      "releaseNotes": "https://github.com/MikaelGRA/Plugster/blob/master/CHANGELOG.md"
+   },
+   "copyright": "Copyright (c) 2015-2016 MikaelGRA",
+
+   "frameworks": {
+      "net45": {
+      }
+   },
+
+   "buildOptions": {
+      "keyFile": "Vibrant.snk"
+   },
+
+   "scripts": {
+      "postcompile": [
+         "dotnet pack --no-build --configuration %compile:Configuration%"
+      ]
+   },
+
+   "configurations": {
+      "Release": {
+         "buildOptions": {
+            "optimize": true,
+            "xmlDoc": true
+         }
+      }
+   }
+}

@@ -1,0 +1,10 @@
+{
+   "version": "1.0.0-*",
+   "dependencies": {
+      "Vibrant.Plugster.ConsoleApp": "1.0.0-*"
+   },
+   "frameworks": {
+      "net45": {
+      }
+   }
+}
